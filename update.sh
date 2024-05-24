@@ -29,4 +29,4 @@ git -c user.name='Travis Automated Update' -c user.email='admin@ruvcha.in' \
 	commit -m "ruvchain ${version}"
 git tag v${version}
 
-git push -q https://${GH_USER}:${GH_TOKEN}@github.com/ruvchain-docker/ruvchain master --tags
+git push -q https://${GH_USER}:${GH_TOKEN}@github.com/ruvcoindev/ruvchain-docker master --tags
