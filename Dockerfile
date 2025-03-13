@@ -9,7 +9,7 @@ RUN set -ex \
       curl \
       git \
       
- && git clone "https://github.com/ruvcoindev/ruvchain-go" /src \
+ && git clone "https://github.com/ruvcoindev/ruvchain" /src \
  && cd /src/ruvchain-go \
  && git reset --hard v${RUVCHAIN_VERSION} \
  && ./build \
@@ -23,8 +23,8 @@ LABEL maintainer "Ruvcoindev <admin@ruvcha.in>" \
 RUN set -ex \
  && apk --no-cache add bash \
 
-COPY --from=builder /src/ruvchain-go/ruvchain    /usr/bin/ \
-COPY --from=builder /src/ruvchain-go/ruvchainctl /usr/bin/ \
+COPY --from=builder /src/ruvchain/ruvchain    /usr/bin/ \
+COPY --from=builder /src/ruvchain/ruvchainctl /usr/bin/ \
 COPY --from=builder /tmp/dumb-init    /usr/bin/ \
 COPY --from=builder   start.sh          /usr/bin/ \
 
