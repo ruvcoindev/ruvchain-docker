@@ -9,7 +9,7 @@ git reset --hard origin/master
 
 ### ---- ###
 
-version=$(curl -s "https://lv.luzifer.io/catalog-api/ruvchain-go/latest.txt?p=version")
+version=$(curl -s "https://lv.luzifer.io/catalog-api/ruvchain/latest.txt?p=version")
 grep -q "RUVCHAIN_VERSION=${version}" Dockerfile && exit 0 || echo "Update required"
 
 sed -Ei \
