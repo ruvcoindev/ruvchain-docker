@@ -1,7 +1,7 @@
 FROM golang:alpine as builder
 
 ENV DUMB_INIT_VERSION=1.2.2 \
-    RUVCHAIN_VERSION=0.1.0
+    RUVCHAIN_VERSION=0.5.12-5
 
 RUN set -ex \
  && apk --no-cache add \
