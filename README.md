@@ -1,6 +1,6 @@
 # ruvchain-docker / ruvchain
 
-Run [ruvchain-go](https://ruvcoindev.github.io/) node in a Docker container
+Run [ruvchain](https://ruvcha.in/) node in a Docker container
 
 ## Usage
 
